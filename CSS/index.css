@@ -1,0 +1,123 @@
+
+
+body {
+  background-color: rgb(234, 216, 234);
+  color: navy;
+  font-family: Arial, sans-serif;
+}
+section {
+    margin: 20px 0;
+    padding: 15px;
+}
+#About {
+    background-color: rgb(177, 177, 154);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+#Experience {
+    background-color: rgb(177, 177, 154);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+#Connect  {
+    background-color: rgb(177, 177, 154);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: darkblue;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: teal;
+}
+#Experience ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+#Experience li {
+    padding: 6px 12px;
+    background-color: #e6f2ff;
+    border: 1px solid #b3d9ff;
+    border-radius: 8px;
+    font-weight: bold;
+}
+#Connect a {
+    color: rgb(177, 177, 154);
+    background-color: rgb(177, 177, 154);
+    text-decoration: none;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#Connect a:hover {
+    background-color: #005582;
+}
+#Connect img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+#Connect img:hover {
+    transform: scale(1.2);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+#Connect ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#Connect li {
+    list-style: none;
+}
+
+#Connect a {
+    text-decoration: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+#Connect img {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+}
+
+#Connect img:hover {
+    transform: scale(1.2);
+}
