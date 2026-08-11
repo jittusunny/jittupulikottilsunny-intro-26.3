@@ -1,27 +1,29 @@
-
-
 body {
-  background-color: rgb(234, 216, 234);
-  color: navy;
-  font-family: Arial, sans-serif;
+    background-color: rgb(234, 216, 234);
+    color: navy;
+    font-family: Arial, sans-serif;
 }
+
 section {
     margin: 20px 0;
     padding: 15px;
 }
+
 #About {
     background-color: rgb(177, 177, 154);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
 }
+
 #Experience {
     background-color: rgb(177, 177, 154);
     padding: 20px;
     border-radius: 10px;
     text-align: left;
 }
-#Connect  {
+
+#Connect {
     background-color: rgb(177, 177, 154);
     padding: 20px;
     border-radius: 10px;
@@ -40,42 +42,33 @@ h2 {
     font-weight: 600;
     color: teal;
 }
+
+/* Experience */
+/* Experience list */
+
 #Experience ul {
     display: flex;
+    flex-direction: column;
     gap: 10px;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
+
+/* Experience boxes */
+
 #Experience li {
-    padding: 6px 12px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
     background-color: #e6f2ff;
     border: 1px solid #b3d9ff;
     border-radius: 8px;
     font-weight: bold;
 }
-#Connect a {
-    color: rgb(177, 177, 154);
-    background-color: rgb(177, 177, 154);
-    text-decoration: none;
-    padding: 3px 6px;
-    border-radius: 3px;
-    font-weight: bold;
-    display: inline-block;
-}
 
-#Connect a:hover {
-    background-color: #005582;
-}
-#Connect img {
-    width: 40px;
-    height: 40px;
-    margin: 10px;
-}
-
-#Connect img:hover {
-    transform: scale(1.2);
-}
+/* Navigation */
 nav ul {
     display: flex;
     justify-content: center;
@@ -93,13 +86,14 @@ nav a {
     font-weight: bold;
     color: black;
 }
+
+/* Connect */
 #Connect ul {
+    display: flex;
+    gap: 20px;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    gap: 20px;
-    align-items: center;
 }
 
 #Connect li {
@@ -107,7 +101,7 @@ nav a {
 }
 
 #Connect a {
-    text-decoration: none;
+    display: inline-block;
     padding: 0;
     background-color: transparent;
 }
