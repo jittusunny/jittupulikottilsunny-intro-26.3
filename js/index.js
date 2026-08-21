@@ -32,3 +32,29 @@ for (let i = 0; i < skills.length; i++) {
 
     skillsList.appendChild(skill);
 }
+const messageForm= document.querySelector('form[name="leave_message"]')
+messageForm.addEventListener("submit",function(event){
+     event.preventDefault();
+     const usersName = event.target.usersName.value;
+    const usersEmail = event.target.usersEmail.value;
+    const userMessage = event.target.userMessage.value;
+
+    console.log(usersName);
+    console.log(usersEmail);
+    console.log(userMessage);
+    const messageSection=document.querySelector("#LeaveMessage")
+    const messageList=messageSection.querySelector("ul")
+    const newMessage=document.createElement("li")
+    newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a>: <span>${userMessage}</span>`;
+    const removeButton=document.createElement("button")
+    removeButton.innerText="remove"
+    removeButton.type="button"
+    removeButton.addEventListener("click",function(event)
+{
+    const entry=removeButton.parentNode
+    entry.remove()
+    newMessage.appendChild(removeButton)
+    messageList.appendChild(newMessage)
+})
+    messageForm.reset();
+})
