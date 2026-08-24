@@ -49,7 +49,7 @@ messageForm.addEventListener("submit",function(event){
     const messageSection=document.querySelector("#messages")
 
     //Select the ul inside messages
-    const messageList=messageSection.querySelector("ul")
+    const messageList=messageSection.querySelector("ul")    
 
     // Create a new message
     const newMessage=document.createElement("li")
@@ -69,7 +69,11 @@ messageForm.addEventListener("submit",function(event){
     entry.remove()
     
     })
+
+    // Add the remove button to the message
     newMessage.appendChild(removeButton)
+
+     // Add the message to the message list
     messageList.appendChild(newMessage)
 
     //Clear the form
