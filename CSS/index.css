@@ -68,6 +68,7 @@ h2 {
     font-weight: bold;
 }
 
+
 /* Navigation */
 nav ul {
     display: flex;
@@ -86,6 +87,7 @@ nav a {
     font-weight: bold;
     color: black;
 }
+
 
 /* Connect */
 #Connect ul {
@@ -115,6 +117,8 @@ nav a {
 #Connect img:hover {
     transform: scale(1.2);
 }
+
+
 /* Skills */
 #Skills ul {
     display: flex;
@@ -132,3 +136,85 @@ nav a {
     padding: 10px 20px;
     font-weight: bold;
 }
+
+
+/* Leave a Message Form */
+#LeaveMessage form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+}
+
+#LeaveMessage input,
+#LeaveMessage textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #b3d9ff;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#LeaveMessage textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+/* Messages */
+#messages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#messages li {
+    background-color: #e6f2ff;
+    border: 1px solid #b3d9ff;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+#messages button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#LeaveMessage button {
+    width: fit-content;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+    #LeaveMessage form {
+        width: 100%;
+    }
+
+    #LeaveMessage input,
+    #LeaveMessage textarea {
+        min-height: 48px;
+        font-size: 16px;
+    }
+
+    #LeaveMessage textarea {
+        min-height: 120px;
+    }
+
+    #LeaveMessage button {
+        min-height: 48px;
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
+
