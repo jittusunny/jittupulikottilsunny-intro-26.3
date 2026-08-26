@@ -218,3 +218,16 @@ nav a {
     }
 }
 
+#Projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#Projects li {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+}

@@ -79,3 +79,25 @@ messageForm.addEventListener("submit",function(event){
     //Clear the form
     messageForm.reset();
 })
+/* Fetch API */
+fetch("https://api.github.com/users/jittusunny/repos")
+  .then(response => {
+    return response.json();
+  })
+  .then(data => {
+    const repositories = data;
+    console.log(repositories);
+
+    const projectSection = document.getElementById("Projects");
+    const projectList = projectSection.querySelector("ul");
+
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+      project.innerText = repositories[i]["name"];
+      projectList.appendChild(project);
+    }
+  })
+  .catch(error => {
+    console.error("Error fetching repositories:", error);
+  });
+
