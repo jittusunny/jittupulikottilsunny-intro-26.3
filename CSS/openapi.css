@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(234, 216, 234);
+    color: navy;
+}
+
+/* Navigation */
+
+nav {
+    padding: 25px 50px;
+}
+
+nav a {
+    color: navy;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #333366;
+}
+
+/* Main page */
+
+main {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+/* Weather container */
+
+.weather-container {
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+/* Controls */
+
+.weather-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+select {
+    min-width: 210px;
+    padding: 14px;
+    font-size: 1rem;
+    border: 2px solid #888;
+    border-radius: 6px;
+    background-color: white;
+    color: #222;
+}
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 14px 22px;
+    border: 2px solid #888;
+    border-radius: 6px;
+    background-color: white;
+    color: #222;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(234, 216, 234);
+}
+
+button:focus {
+    outline: 3px solid navy;
+    outline-offset: 2px;
+}
+
+/* Weather result */
+
+.weather-result {
+    margin-top: 40px;
+    padding: 30px;
+    min-height: 180px;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+}
+
+.weather-result h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.weather-result p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+/* Error */
+
+#errorMessage {
+    margin-top: 20px;
+    color: darkred;
+    font-weight: bold;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 20px;
+    }
+
+    .weather-container {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .weather-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
