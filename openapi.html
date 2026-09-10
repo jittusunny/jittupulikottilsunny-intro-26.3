@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Explorer</title>
+
+    <link rel="stylesheet" href="css/openapi.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Back To Portfolio</a>
+    </nav>
+
+    <main>
+
+        <section class="weather-container">
+
+            <h1>🌤️ Weather Explorer</h1>
+
+            <div class="weather-controls">
+
+                <label for="city">Select a City</label>
+
+                <select id="city">
+                    <option value="">Select City</option>
+
+                    <option value="32.7767,-96.7970">
+                     Dallas
+                    </option>
+
+                    <option value="40.7128,-74.0060">
+                        New York
+                    </option>
+
+                    <option value="25.7617,-80.1918">
+                        Miami
+                    </option>
+
+                    <option value="34.0522,-118.2437">
+                        Los Angeles
+                    </option>
+
+                    <option value="41.8781,-87.6298">
+                        Chicago
+                    </option>
+
+                    <option value="33.7490,-84.3880">
+                        Atlanta
+                    </option>
+
+                </select>
+
+                <div class="buttons">
+
+                    <button id="temperatureButton" type="button">
+                        🌡️ Temperature
+                    </button>
+
+                    <button id="conditionsButton" type="button">
+                        🌤️ Conditions
+                    </button>
+
+                </div>
+
+            </div>
+
+            <section id="weatherResult" class="weather-result">
+
+                <h2>Weather Information</h2>
+
+                <p>
+                    Select a city and choose an option above.
+                </p>
+
+            </section>
+
+            <p id="errorMessage"></p>
+
+        </section>
+
+    </main>
+
+    <script src="js/openapi.js"></script>
+
+</body>
+
+</html>

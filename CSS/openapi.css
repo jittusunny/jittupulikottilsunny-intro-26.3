@@ -1,0 +1,142 @@
+/* General page styling */
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+background-color: rgb(234, 216, 234);
+color: navy;
+}
+
+/* Main container */
+main {
+max-width: 700px;
+margin: 40px auto;
+padding: 30px;
+background-color: rgb(177, 177, 154);
+border-radius: 15px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Page heading */
+h1 {
+text-align: center;
+color:darkblue;    
+font-size: 36px;
+margin-bottom: 10px;
+}
+
+/* Intro paragraph */
+main > p {
+text-align: center;
+font-size: 17px;
+margin-bottom: 30px;
+}
+
+/* City selection area */
+label {
+display: block;
+font-weight: bold;
+margin-bottom: 8px;
+}
+
+#city {
+width: 100%;
+padding: 12px;
+font-size: 16px;
+border: 2px solid #8bbde8;
+border-radius: 8px;
+background-color: white;
+box-sizing: border-box;
+margin-bottom: 20px;
+}
+
+/* Button container */
+#temperatureButton,
+#conditionsButton {
+padding: 12px 20px;
+margin: 5px;
+border: none;
+border-radius: 8px;
+background-color: #1769aa;
+color: white;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+}
+
+/* Button hover effect */
+#temperatureButton:hover,
+#conditionsButton:hover {
+background-color: #0d4f80;
+}
+
+/* Weather result box */
+#weatherResult {
+margin-top: 30px;
+padding: 25px;
+text-align: center;
+background-color: #eaf6ff;
+border-radius: 12px;
+border: 1px solid #b8d9f0;
+}
+
+/* Weather result heading */
+#weatherResult h2 {
+color: #1769aa;
+margin-top: 0;
+}
+
+/* Weather result text */
+#weatherResult p {
+font-size: 18px;
+line-height: 1.6;
+}
+
+/* Error message */
+#errorMessage {
+margin-top: 15px;
+color: #c62828;
+font-weight: bold;
+text-align: center;
+}
+
+/* Back to portfolio link */
+a {
+color: #1769aa;
+font-weight: bold;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+
+
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+main > p {
+    font-size: 15px;
+}
+
+#temperatureButton,
+#conditionsButton {
+    width: 100%;
+    margin: 5px 0;
+}
+
+#weatherResult {
+    padding: 18px;
+}
+
+
+}
